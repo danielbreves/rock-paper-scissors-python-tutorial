@@ -6,7 +6,8 @@
                 "github.copilot.enable": {
                     "*": false
                 },
-                "github.copilot.chat.agent.enabled": false
+                "github.copilot.chat.agent.enabled": false,
+                "github.codespaces.disableAIFeatures": true
             },
             "extensions": [
                 "ms-python.python"
