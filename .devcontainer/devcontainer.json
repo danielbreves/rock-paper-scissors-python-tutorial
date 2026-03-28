@@ -8,10 +8,12 @@
                     "*": false
                 },
                 "github.copilot.chat.agent.enabled": false,
-                "github.codespaces.disableAIFeatures": true
+                "github.codespaces.disableAIFeatures": true,
+                "chat.commandCenter.enabled": false
             },
             "extensions": [
-                "ms-python.python"
+                "ms-python.python",
+                "-github.copilot-chat"
             ]
         }
     }
