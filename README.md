@@ -4,7 +4,7 @@ Learn Python by building a rock, paper, scissors game, one level at a time!
 
 ## Getting started
 
-1. Click the green **Code** button above, then **Codespaces** > **Create codespace on main**
+1. Click the green **Code** button at the top right of the page, then **Codespaces** > **Create codespace on main**
 2. Wait for the codespace to load — it will open a code editor in your browser
 3. On the left side you'll see a list of files — click on `level-1.py` to open it
 4. Follow the instructions inside the file
