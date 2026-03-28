@@ -18,9 +18,14 @@ Let's do this by creating a variable called "life" and setting it to 3.
 
 # Step 3: To run this file, type "python level-1.py" in the terminal at the bottom
 # of the screen and hit Enter. You should see the number 3 appear!
+# Notice that Python ignored the text between """ and the lines starting with #.
+# These are called comments and are just notes for us to read.
 
-# Step 4: Now try print("life") and print(blah) below this line.
-# Run the file again to see what happens. Can you spot the difference?
+# Step 4: Try changing print(life) to print("life") and run it again.
+# Notice how the output is different!
+
+# Step 5: Now try changing it to print(blah) and run it again.
+# Notice the error message that appears!
 
 # When you're done, open level-2.py to continue!
 
