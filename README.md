@@ -1,4 +1,4 @@
-# Rock, Paper, Scissors - Python Tutorial ✊🤚✌️
+# Rock, Paper, Scissors - Python Tutorial ✊✋✌️
 
 Learn Python by building a rock, paper, scissors game, one level at a time!
 
