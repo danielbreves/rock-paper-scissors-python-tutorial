@@ -12,7 +12,6 @@ In this level we'll let players place their ships by typing positions.
 
 class Battleship:
     name: str
-    size: int
     positions: list
     hits: list
     status: str
@@ -22,7 +21,7 @@ class Battleship:
         self.status = "afloat"
 
     def check_status(self):
-        if len(self.hits) == self.size:
+        if len(self.hits) == len(self.positions):
             self.status = "sunk"
         return self.status
 
@@ -75,12 +74,10 @@ class Player:
 # Write the following inside the Game class:
 #     def place_ship(self, player):
 #         ship_name = "Destroyer"
-#         ship_size = 3
-#         text = input(player.name + ", enter " + str(ship_size) + " positions for your " + ship_name + " (e.g. A1 A2 A3): ")
-#         positions = text.split()  # turns "A1 A2 A3" into ["A1", "A2", "A3", "A4"]
+#         text = input(player.name + ", enter 3 positions for your " + ship_name + " (e.g. A1 A2 A3): ")
+#         positions = text.split()  # turns "A1 A2 A3" into ["A1", "A2", "A3"]
 #         ship = Battleship()
 #         ship.name = ship_name
-#         ship.size = ship_size
 #         ship.positions = positions
 #         player.add_ship(ship)
 

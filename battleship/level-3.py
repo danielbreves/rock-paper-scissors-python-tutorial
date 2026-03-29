@@ -10,7 +10,6 @@ Remember: a method is a function inside a class, and "self" means
 
 class Battleship:
     name: str
-    size: int
     positions: list
     hits: list
     status: str
@@ -20,10 +19,11 @@ class Battleship:
         self.status = "afloat"
 
     # Step 1: Let's add a method that checks if the ship is sunk.
-    # A ship is sunk when the number of hits equals its size.
+    # We can use len() to count the number of positions instead of keeping track
+    # of size separately. A ship is sunk when the number of hits equals the number of positions.
     # Write the following below this line:
     # def check_status(self):
-    #     if len(self.hits) == self.size:
+    #     if len(self.hits) == len(self.positions):
     #         self.status = "sunk"
     #     return self.status
 
@@ -44,7 +44,6 @@ class Battleship:
 
 destroyer = Battleship()
 destroyer.name = "Destroyer"
-destroyer.size = 3
 destroyer.positions = ["A1", "A2", "A3"]
 
 # Step 3: Let's test it! Try attacking all three positions to sink the ship.

@@ -18,7 +18,6 @@ ships, while the Battleship's version checks one ship's positions.
 
 class Battleship:
     name: str
-    size: int
     positions: list
     hits: list
     status: str
@@ -28,7 +27,7 @@ class Battleship:
         self.status = "afloat"
 
     def check_status(self):
-        if len(self.hits) == self.size:
+        if len(self.hits) == len(self.positions):
             self.status = "sunk"
         return self.status
 
@@ -83,7 +82,6 @@ player2.name = "Player 2"
 
 ship = Battleship()
 ship.name = "Destroyer"
-ship.size = 3
 ship.positions = ["A1", "A2", "A3"]
 player2.add_ship(ship)
 

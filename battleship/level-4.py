@@ -8,7 +8,6 @@ Let's create a Player class and give it a method to add ships.
 
 class Battleship:
     name: str
-    size: int
     positions: list
     hits: list
     status: str
@@ -18,7 +17,7 @@ class Battleship:
         self.status = "afloat"
 
     def check_status(self):
-        if len(self.hits) == self.size:
+        if len(self.hits) == len(self.positions):
             self.status = "sunk"
         return self.status
 
@@ -58,7 +57,6 @@ class Battleship:
 #
 # destroyer = Battleship()
 # destroyer.name = "Destroyer"
-# destroyer.size = 3
 # destroyer.positions = ["A1", "A2", "A3"]
 #
 # player1.add_ship(destroyer)
