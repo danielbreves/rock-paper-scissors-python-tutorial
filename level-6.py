@@ -39,4 +39,6 @@ life = 3
         # Write print("You have", life, "lives remaining.") below this line:
 
 
+# Run the code with "python level-6.py" and play until you run out of lives!
+
 # level-7.py is waiting for you!

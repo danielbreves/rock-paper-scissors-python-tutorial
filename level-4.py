@@ -41,4 +41,6 @@ print("The computer chose " + computer_hand + "!")
 
 
 
+# Run the code with "python level-4.py" and try to win!
+
 # Nice work! Head to level-5.py!

@@ -40,4 +40,6 @@ while life > 0:
         life -= 1  # This is a shortcut for life = life - 1
         print("You have " + str(life) + " lives remaining.")  # str() turns a number into text
 
+# Run the code with "python level-8.py" and try typing "banana"!
+
 # One more to go! Open level-9.py!
