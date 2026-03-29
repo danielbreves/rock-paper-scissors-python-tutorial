@@ -14,16 +14,16 @@ For example: ["apple", "banana", "cherry"] is a list of three fruits.
 # Step 1: Let's import the random module. Write "import random" below this line:
 
 
-# Step 2: Let's make a list of the possible choices.
-# Write choices = ["rock", "paper", "scissors"] below this line:
+# Step 2: Let's make a list of the possible options.
+# Write options = ["rock", "paper", "scissors"] below this line:
 
 
 # Step 3: Now let's make the computer pick a random item from our list.
-# Write computerHand = random.choice(choices) below this line:
+# Write computer_hand = random.choice(options) below this line:
 
 
 # Step 4: Print the computer's choice to see what it picked.
-# Write print("The computer chose " + computerHand) below this line:
+# Write print("The computer chose " + computer_hand) below this line:
+
 
 # Keep going! Open level-4.py!
-

@@ -10,33 +10,40 @@ import random
 
 # Step 1: Let's create a function called "check_winner" that takes two inputs and returns a result.
 # Write the following below this line:
-# def check_winner(playerHand, computerHand):
-#     if playerHand == computerHand:
+# def check_winner(player_hand, computer_hand):
+#     if player_hand == computer_hand:
 #         return "It's a tie!"
-#     elif (playerHand == "rock" and computerHand == "scissors") or \
-#          (playerHand == "paper" and computerHand == "rock") or \
-#          (playerHand == "scissors" and computerHand == "paper"):
+#     elif (player_hand == "rock" and computer_hand == "scissors") or \
+#          (player_hand == "paper" and computer_hand == "rock") or \
+#          (player_hand == "scissors" and computer_hand == "paper"):
 #         return "You win!"
 #     else:
 #         return "You lose!"
 
 
+
+
+
+
+
+
 life = 3
 
 while life > 0:
-    choices = ["rock", "paper", "scissors"]
-    playerHand = input("Enter your choice " + str(choices) + ": ")
+    options = ["rock", "paper", "scissors"]
+    player_hand = input("Enter your choice " + str(options) + ": ")
 
-    if playerHand not in choices:
+    if player_hand not in options:
         print("Oops! That's not a valid choice. Try again!")
         continue
 
-    computerHand = random.choice(choices)
+    computer_hand = random.choice(options)
 
-    print("Computer plays " + computerHand + "!")
+    print("Computer chose " + computer_hand + "!")
 
     # Step 2: Now instead of all those if/elif/else lines, we can call our function!
-    # Write "result = check_winner(playerHand, computerHand)" below this line:
+    # Write "result = check_winner(player_hand, computer_hand)" below this line:
+
 
     # Step 3: Print the result below this line:
 
@@ -45,5 +52,8 @@ while life > 0:
     # if result == "You lose!":
     #     life -= 1
     #     print("You have " + str(life) + " lives remaining.")
+
+
+
 
 # When you're done, open level-10.py for some bonus ideas!

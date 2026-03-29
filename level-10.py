@@ -13,7 +13,7 @@ Copy your completed code from level 9 into this file, then try some of these ide
 - Use a dictionary to simplify the winner check instead of all those if/elif lines.
   Hint: winner_loser_dict = {"rock": "scissors", "paper": "rock", "scissors": "paper"} maps what beats what.
   Then you can do this:
-    if winner_loser_dict[playerHand] == computerHand:
+    if winner_loser_dict[player_hand] == computer_hand:
         return "You win!"
   Learn more about dictionaries here: https://docs.python.org/3/tutorial/datastructures.html#dictionaries
 - Move the check_winner function into its own helpers.py file and write 'from helpers import check_winner'

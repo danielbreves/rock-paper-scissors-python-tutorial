@@ -15,25 +15,30 @@ This is how Python knows which code belongs inside the "if".
 
 import random
 
-choices = ["rock", "paper", "scissors"]
-playerHand = input("Enter your choice (rock, paper, scissors): ")
-computerHand = random.choice(choices)
+options = ["rock", "paper", "scissors"]
+player_hand = input("Enter your choice (rock, paper, scissors): ")
+computer_hand = random.choice(options)
 
-print("The computer chose " + computerHand + "!")
+print("The computer chose " + computer_hand + "!")
 
 # Step 1: First let's check if it's a tie. Write the following below this line:
-# if playerHand == computerHand:
+# if player_hand == computer_hand:
 #     print("It's a tie!")
 
 
+
 # Step 2: Now let's check if the player wins with rock. Write the following below this line:
-# if playerHand == "rock" and computerHand == "scissors":
+# if player_hand == "rock" and computer_hand == "scissors":
 #     print("You win! Rock beats scissors!")
+
 
 
 # Step 3: Can you figure out the other two winning combinations?
 # Hint: paper beats rock, and scissors beats paper.
 # Write two more "if" checks below this line:
 
-# Nice work! Head to level-5.py!
 
+
+
+
+# Nice work! Head to level-5.py!

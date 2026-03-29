@@ -28,4 +28,3 @@ Let's do this by creating a variable called "life" and setting it to 3.
 # Notice the error message that appears!
 
 # Ready for more? Open level-2.py!
-
