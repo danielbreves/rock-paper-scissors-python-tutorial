@@ -1,4 +1,4 @@
-# Python Tutorials for Kids 🐍
+# CoderDojo Python Tutorials 🐍
 
 Learn Python by building games, one level at a time!
 
@@ -10,9 +10,9 @@ Learn Python by building games, one level at a time!
 
 ## Tutorials
 
-| Tutorial | What you'll learn |
-|----------|-------------------|
-| [Rock, Paper, Scissors](rock-paper-scissors/) | Variables, input, lists, loops, functions |
-| [Battleship](battleship/) | Classes, objects, methods, dictionaries |
+| Level | Tutorial | What you'll learn |
+|-------|----------|-------------------|
+| Beginner | [Rock, Paper, Scissors](rock-paper-scissors/) | Variables, input, lists, loops, functions |
+| Intermediate | [Battleship](battleship/) | Classes, objects, methods, dictionaries |
 
 Start with Rock, Paper, Scissors — Battleship builds on what you learn there!
