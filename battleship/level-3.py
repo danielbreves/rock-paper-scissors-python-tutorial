@@ -47,18 +47,22 @@ destroyer.name = "Destroyer"
 destroyer.positions = ["A1", "A2", "A3"]
 
 # Step 3: Let's test it! Try attacking all three positions to sink the ship.
-# Write the following below this line:
-# print(destroyer.receive_attack("A1"))
-# print(destroyer.receive_attack("A2"))
-# print(destroyer.receive_attack("A3"))
+# Write print(destroyer.receive_attack("A1")) below this line, then do the same for "A2" and "A3" on separate lines:
 
 
 
-# Step 4: Now try attacking a position that's a miss.
-# Write print(destroyer.receive_attack("B1")) below this line:
+# Step 4: Now try attacking a position that's a miss (e.g. "B1") below this line:
 
 
 # Run the code with "python battleship/level-3.py" — you should see True, True, True
 # and "You sunk the Destroyer!", then False for the miss!
+
+# Bonus: Can you write a method called "get_remaining" that returns how many
+# positions haven't been hit yet?
+# Hint: it should return len(self.positions) - len(self.hits).
+# Test it by printing destroyer.get_remaining() below this line after the attacks:
+
+
+# Run the code again to test your method!
 
 # Keep going! Open level-4.py!

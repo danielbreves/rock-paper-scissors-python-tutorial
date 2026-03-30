@@ -103,11 +103,11 @@ class Game:
         while True:
             position = input(current_player.name + "'s turn! Which position do you want to attack? ")
 
-            # Step 2: Check if the player already attacked this position.
-            # Write the following below this line:
-            # if position in current_player.attacks:
-            #     print("You already attacked " + position + "! Try a different position.")
-            #     continue
+            # Step 2: Can you check if the player already attacked this position?
+            # If they did, print a message and skip the rest of this turn.
+            # Hint: use "if position in current_player.attacks:" to check,
+            # print a message, and use "continue" to skip back to the top of the loop.
+            # Write your code below this line:
 
 
 

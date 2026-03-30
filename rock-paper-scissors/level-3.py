@@ -28,4 +28,7 @@ For example: ["apple", "banana", "cherry"] is a list of three fruits.
 
 # Run the code with "python rock-paper-scissors/level-3.py" to see what the computer picks!
 
+# Bonus: Try adding a 4th option like "lizard" to the options list.
+# Run the code again to see the new option in action!
+
 # Keep going! Open level-4.py!

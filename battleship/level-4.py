@@ -42,11 +42,11 @@ class Battleship:
 
 
 
-# Step 2: Let's add a method to add a ship to the player.
-# Remember: methods inside a class must be indented!
-# Write the following inside the Player class, after __init__:
-#     def add_ship(self, ship):
-#         self.ships.append(ship)
+# Step 2: Can you write a method called "add_ship" that takes a ship and adds
+# it to self.ships? Remember: methods inside a class must be indented!
+# Hint: in level 3 we used self.hits.append(position) to add a hit — the same
+# pattern works here with self.ships and ship.
+# Write your add_ship method inside the Player class, after __init__:
 
 
 

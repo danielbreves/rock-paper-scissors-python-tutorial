@@ -50,4 +50,16 @@ We create a class using the word "class", and we list its properties inside it.
 
 # Run the code with "python battleship/level-1.py" to see your first battleship!
 
+# Bonus: Let's create a second ship the same way you did in step 2!
+# Create a new Battleship instance and set its name to "Carrier" and its size to 5
+# below this line:
+
+
+
+# Now print the carrier's name and size.
+# You already know how from step 3.
+
+
+# Run the code again to see both ships!
+
 # Ready for more? Open level-2.py!

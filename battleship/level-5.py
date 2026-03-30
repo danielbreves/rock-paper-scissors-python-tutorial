@@ -63,13 +63,12 @@ class Player:
 
 
 
-    # Step 2: Now let's add a method to attack another player.
-    # It calls the enemy's receive_attack and saves the result.
-    # Write the following below this line:
-    # def attack(self, enemy, position):
-    #     result = enemy.receive_attack(position)
-    #     self.attacks[position] = result
-    #     return result
+    # Step 2: Can you complete the "attack" method below? It should:
+    #   1. Call enemy.receive_attack(position) and save the result in a variable
+    #   2. Save the result in self.attacks[position] (that's how you add to a dictionary!)
+    #   3. Return the result
+    def attack(self, enemy, position):
+        pass  # Pass does nothing! Replace it with your code!
 
 
 
