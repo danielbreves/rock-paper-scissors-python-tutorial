@@ -2,6 +2,7 @@
   "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
   "files.trimTrailingWhitespace": false,
   "editor.formatOnSave": false,
+  "editor.hover.enabled": false,
   "editor.trimAutoWhitespace": false,
   "[python]": {
     "editor.defaultFormatter": null,
