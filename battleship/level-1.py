@@ -1,5 +1,5 @@
 """
-Welcome to the Battleship tutorial!
+Welcome to the Battleship tutorial! 🚢
 
 In the rock, paper, scissors tutorial, we used variables, lists, and functions.
 Now we're going to learn something new: classes!

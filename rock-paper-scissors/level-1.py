@@ -1,5 +1,5 @@
 """
-Hello world!
+Hello world! 👋
 
 Welcome to the first level of this Python programming challenge.
 In this tutorial you will learn how to build a rock, paper, scissors game using Python!

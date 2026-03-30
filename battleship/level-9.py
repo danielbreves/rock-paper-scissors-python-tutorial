@@ -1,8 +1,8 @@
 """
 Bonus level!
 
-You finished the Battleship tutorial! The game works, but there's so much
-more you can add.
+Congratulations! 🎉 You finished the Battleship tutorial!
+The game works, but there's so much more you can add.
 
 Copy your completed code from level 8 into this file, then try some of these ideas:
 

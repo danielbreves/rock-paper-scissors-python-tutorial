@@ -1,7 +1,8 @@
 """
 Bonus level!
 
-You finished the tutorial! The game is complete, but there's so much more you can add.
+Congratulations! 🎉 You finished the tutorial!
+The game is complete, but there's so much more you can add.
 
 Copy your completed code from level 9 into this file, then try some of these ideas:
 

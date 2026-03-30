@@ -24,13 +24,13 @@ life = 3
     print("The computer chose " + computer_hand + "!")
 
     if player_hand == computer_hand:
-        print("It's a tie!")
+        print("It's a tie! 🤷")
     elif (player_hand == "rock" and computer_hand == "scissors") or \
          (player_hand == "paper" and computer_hand == "rock") or \
          (player_hand == "scissors" and computer_hand == "paper"):
-        print("You win!")
+        print("You win! 🎉")
     else:
-        print("You lose!")
+        print("You lose! 💀")
         # Step 2: When the player loses, we need to subtract 1 from their lives.
         # Write "life = life - 1" below this line:
 
