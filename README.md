@@ -16,3 +16,7 @@ Learn Python by building games, one level at a time!
 | Intermediate | [Battleship](battleship/) | Classes, objects, methods, dictionaries |
 
 Start with Rock, Paper, Scissors — Battleship builds on what you learn there!
+
+## Theme
+
+This project includes a Scratch-inspired colour theme so the syntax highlighting feels familiar to kids coming from Scratch. It applies automatically in VS Code and Codespaces. To disable it, delete the `.vscode/settings.json` file.
