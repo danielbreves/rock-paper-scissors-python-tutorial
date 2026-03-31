@@ -44,7 +44,7 @@ destroyer.positions = ["A1", "A2", "A3"]
 
 # Bonus: Let's add a new property to the Battleship class!
 
-# Step 3: Add "age: int" to the class properties (after status on line 20).
+# Step 3: Add "age: int" to the class properties (below status on line 20).
 # Then inside __init__, set a default: self.age = 0
 # Print destroyer.age to check it works below this line:
 

@@ -16,6 +16,7 @@ and gives it back to you.
 
 
 # Run the code with "python rock-paper-scissors/level-2.py", try typing a choice and hit enter!
+# Tip: Press the up arrow key in the terminal to bring back the previous command!
 
 # Bonus: Can you ask for the player's name and print a welcome message before step 1?
 # Try copying the code you wrote from step 1 and 2 and modifying the text and variable names.

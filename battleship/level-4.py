@@ -1,10 +1,14 @@
 """
-Level 4! Time for players!
+Level 4! Time to learn debugging!
 
-A battleship game needs players! Each player has a list of ships.
-
-Let's create a Player class and give it a method to add ships.
+Every programmer makes mistakes — even the pros! The trick is knowing how to
+find and fix them. In this level you'll learn to use the debugger, a tool
+that lets you pause your code and look at what's happening step by step.
 """
+
+# Here's a Battleship class, but it has a bug hiding in it!
+# Try running it with "python battleship/level-4.py" first — you'll see something isn't right.
+# Then scroll down for instructions on how to find and fix it using the debugger!
 
 class Battleship:
     name: str
@@ -30,40 +34,44 @@ class Battleship:
         return False
 
 
-# Step 1: Let's create a Player class with a list of ships.
-# Write the following below this line:
-# class Player:
-#     name: str
-#     ships: list
-#
-#     def __init__(self):
-#         self.ships = []
+destroyer = Battleship()
+destroyer.name = "Destroyer"
+destroyer.positions = ["A1", "A2", "A3"]
+
+# Bug: We expected this to print True, True, True — but one of the attacks is wrong!
+print(destroyer.receive_attack("A1"))
+print(destroyer.receive_attack("A2"))
+print(destroyer.receive_attack("A4"))
+
+# We expected this to print "sunk" — but it doesn't!
+print("Status: " + destroyer.check_status())
 
 
+# Step 1: Let's use the debugger to find the bug!
+# Click on the red dot that appears next to the line number 42 where we call destroyer.receive_attack("A1").
+# This is called a BREAKPOINT. It tells the debugger to pause here.
 
+# Step 2: Click the play icon (the one with a bug on it) on the left sidebar (4th from the top),
+# then click the green play button at the top (or try pressing F5). The code will pause at your breakpoint.
+# Look at the left side panel — you should see the destroyer object. Click on it to see its properties.
+# You can also hover over variables in the code to see their values.
 
-# Step 2: Can you write a method called "add_ship" that takes a ship and adds
-# it to self.ships? Remember: methods inside a class must be indented!
-# Hint: in level 3 we used self.hits.append(position) to add a hit — the same
-# pattern works here with self.ships and ship.
-# Write your add_ship method inside the Player class, after __init__:
+# Step 3: Press the "Step Over" button (it looks like an arrow curving over a dot) to run one line at a time.
+# Watch how the property hits changes after each line runs. Can you spot which attack is wrong?
+# If you miss it, you can always stop the debugger (click the red square icon), and click play again!
 
+# Step 4: The status still says "afloat" even after 3 attacks. Run the debugger again, and
+# once the code pauses on the line 47 where we call destroyer.check_status(),
+# step into the method by clicking the "Step Into" button (it looks like an arrow pointing at a dot below it).
+# Look at the values of len(self.hits) and len(self.positions) — are they what you expect?
 
+# Spoiler alert! The bug is on line 44, we meant to attack "A3" instead of "A4".
+# Can you fix it and run the code again to see if it works? You can remove the breakpoint by clicking on the red dot again.
+# The terminal should print:
+# True
+# True
+# True
+# You sunk the Destroyer!
+# Status: sunk
 
-# Step 3: Let's test it! Create a player and give them a ship.
-# Write the following below this line:
-# player1 = Player()
-# player1.name = "Player 1"
-#
-# destroyer = Battleship()
-# destroyer.name = "Destroyer"
-# destroyer.positions = ["A1", "A2", "A3"]
-#
-# player1.add_ship(destroyer)
-# print(player1.name + " has " + str(len(player1.ships)) + " ship(s)")
-
-
-
-# Run the code with "python battleship/level-4.py"!
-
-# Nice work! Head to level-5.py!
+# Great detective work! Open level-5.py!

@@ -1,19 +1,9 @@
 """
-Level 5! Let's battle!
+Level 5! Time for players!
 
-Now let's teach players how to attack and be attacked.
+A battleship game needs players! Each player has a list of ships.
 
-When a player gets attacked, we check each of their ships to see if
-the position is a hit. When a player attacks, we save the result in
-a dictionary so they can see what they've tried.
-
-A dictionary stores pairs of things — like a position and its result.
-For example: {"A1": "hit", "B3": "miss"}
-You can add to a dictionary like this: attacks["A1"] = "hit"
-
-Notice that Player and Battleship both have a method called receive_attack.
-That's OK! They do different things — the Player's version checks all its
-ships, while the Battleship's version checks one ship's positions.
+Let's create a Player class and give it a method to add ships.
 """
 
 class Battleship:
@@ -40,58 +30,40 @@ class Battleship:
         return False
 
 
-class Player:
-    name: str
-    ships: list
-    attacks: dict  # this is new!
-
-    def __init__(self):
-        self.ships = []
-        self.attacks = {}  # an empty dictionary to track our attacks
-
-    def add_ship(self, ship):
-        self.ships.append(ship)
-
-    # Step 1: Let's add a method that handles being attacked.
-    # It checks each ship to see if the position is a hit.
-    # Write the following below this line:
-    # def receive_attack(self, position):
-    #     for ship in self.ships:
-    #         if ship.receive_attack(position):
-    #             return "hit"
-    #     return "miss"
+# Step 1: Let's create a Player class with a list of ships.
+# Write the following below this line:
+# class Player:
+#     name: str
+#     ships: list
+#
+#     def __init__(self):
+#         self.ships = []
 
 
 
-    # Step 2: Can you complete the "attack" method below? It should:
-    #   1. Call enemy.receive_attack(position) and save the result in a variable
-    #   2. Save the result in self.attacks[position] (that's how you add to a dictionary!)
-    #   3. Return the result
-    def attack(self, enemy, position):
-        pass  # Pass does nothing! Replace it with your code!
+
+# Step 2: Can you write a method called "add_ship" that takes a ship and adds
+# it to self.ships? Remember: methods inside a class must be indented!
+# Hint: in level 3 we used self.hits.append(position) to add a hit — the same
+# pattern works here with self.ships and ship.
+# Write your add_ship method inside the Player class, after __init__:
 
 
 
-# Let's test it!
-player1 = Player()
-player1.name = "Player 1"
-
-player2 = Player()
-player2.name = "Player 2"
-
-ship = Battleship()
-ship.name = "Destroyer"
-ship.positions = ["A1", "A2", "A3"]
-player2.add_ship(ship)
-
-# Step 3: Let's attack! Write the following below this line:
-# print(player1.attack(player2, "A1"))
-# print(player1.attack(player2, "B5"))
-# print("Player 1's attacks: " + str(player1.attacks))
+# Step 3: Let's test it! Create a player and give them a ship.
+# Write the following below this line:
+# player1 = Player()
+# player1.name = "Player 1"
+#
+# destroyer = Battleship()
+# destroyer.name = "Destroyer"
+# destroyer.positions = ["A1", "A2", "A3"]
+#
+# player1.add_ship(destroyer)
+# print(player1.name + " has " + str(len(player1.ships)) + " ship(s)")
 
 
 
-# Run the code with "python battleship/level-5.py" — you should see "hit", "miss",
-# and the attacks dictionary!
+# Run the code with "python battleship/level-5.py"!
 
-# Open level-6.py for the next challenge!
+# Nice work! Head to level-6.py!

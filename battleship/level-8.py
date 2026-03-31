@@ -1,11 +1,10 @@
 """
-The final level! You've come a long way!
+You're getting the hang of this! Level 8!
 
-The game works, but it never ends! We need to check if all of a player's
-ships have been sunk after each attack. When that happens, the attacker wins!
+Now let's add the play loop! Players will take turns attacking each other.
 
-We'll also check if a player has already attacked a position so they
-don't waste a turn.
+After each attack we'll show the result and print a list of all their
+previous attacks so they can keep track.
 """
 
 class Battleship:
@@ -80,53 +79,24 @@ class Game:
             print("\n" * 50)
             input("Pass the device to the other player and press Enter.")
 
-    # Step 1: Add a method that checks if a player has lost.
-    # A player loses when all their ships are sunk.
-    # We check each ship — if we find one that's still afloat, they haven't lost yet.
+    # Step 1: Add a play method with a loop where players take turns.
+    # We use two variables to keep track of whose turn it is.
     # Write the following below this line:
-    # def check_loser(self):
-    #     for player in [self.player1, self.player2]:
-    #         all_sunk = True
-    #         for ship in player.ships:
-    #             if ship.status != "sunk":
-    #                 all_sunk = False
-    #         if all_sunk:
-    #             return player
-    #     return None
+    # def play(self):
+    #     current_player = self.player1
+    #     next_player = self.player2
+    #
+    #     while True:
+    #         position = input(current_player.name + "'s turn! Which position do you want to attack? ")
+    #         result = current_player.attack(next_player, position)
+    #         print(position + " is a " + result + "!")
+    #         print("Your attacks: " + str(current_player.attacks))
+    #
+    #         # Swap turns — we need a temporary variable so we don't lose track
+    #         previous_player = current_player
+    #         current_player = next_player
+    #         next_player = previous_player
 
-
-
-    def play(self):
-        current_player = self.player1
-        next_player = self.player2
-
-        while True:
-            position = input(current_player.name + "'s turn! Which position do you want to attack? ")
-
-            # Step 2: Can you check if the player already attacked this position?
-            # If they did, print a message and skip the rest of this turn.
-            # Hint: use "if position in current_player.attacks:" to check,
-            # print a message, and use "continue" to skip back to the top of the loop.
-            # Write your code below this line:
-
-
-
-            result = current_player.attack(next_player, position)
-            print(position + " is a " + result + "!")
-            print("Your attacks: " + str(current_player.attacks))
-
-            # Step 3: Check if the game is over. Write the following below this line:
-            # loser = self.check_loser()
-            # if loser:
-            #     print(current_player.name + " wins!")
-            #     break
-
-
-
-            # Swap turns
-            previous_player = current_player
-            current_player = next_player
-            next_player = previous_player
 
 
 player1 = Player()
@@ -136,8 +106,11 @@ player2.name = "Player 2"
 
 game = Game(player1, player2)
 game.setup()
-game.play()
 
-# Run the code with "python battleship/level-8.py" and play until someone wins!
+# Step 2: Start the game! Write game.play() below this line:
 
-# When you're done, open level-9.py for some bonus ideas!
+
+# Run the code with "python battleship/level-8.py" and battle!
+# The game won't end yet — press Ctrl+C to stop it.
+
+# Almost there! Open level-9.py!

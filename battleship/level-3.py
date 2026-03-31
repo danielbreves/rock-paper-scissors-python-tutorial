@@ -57,12 +57,4 @@ destroyer.positions = ["A1", "A2", "A3"]
 # Run the code with "python battleship/level-3.py" — you should see True, True, True
 # and "You sunk the Destroyer!", then False for the miss!
 
-# Bonus: Can you write a method called "get_remaining" that returns how many
-# positions haven't been hit yet?
-# Hint: it should return len(self.positions) - len(self.hits).
-# Test it by printing destroyer.get_remaining() below this line after the attacks:
-
-
-# Run the code again to test your method!
-
-# Keep going! Open level-4.py!
+# Keep going! Open level-4.py to learn about debugging!
