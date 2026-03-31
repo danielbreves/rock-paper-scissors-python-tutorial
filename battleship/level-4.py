@@ -54,7 +54,7 @@ print("Status: " + destroyer.check_status())
 # Step 2: Click the play icon (the one with a bug on it) on the left sidebar (4th from the top),
 # then click the green play button at the top (or try pressing F5). The code will pause at your breakpoint.
 # Look at the left side panel — you should see the destroyer object. Click on it to see its properties.
-# You can also hover over variables in the code to see their values.
+# You can also mouse over variables in the code to see their values.
 
 # Step 3: Press the "Step Over" button (it looks like an arrow curving over a dot) to run one line at a time.
 # Watch how the property hits changes after each line runs. Can you spot which attack is wrong?
@@ -63,10 +63,11 @@ print("Status: " + destroyer.check_status())
 # Step 4: The status still says "afloat" even after 3 attacks. Run the debugger again, and
 # once the code pauses on the line 47 where we call destroyer.check_status(),
 # step into the method by clicking the "Step Into" button (it looks like an arrow pointing at a dot below it).
-# Look at the values of len(self.hits) and len(self.positions) — are they what you expect?
+# Mouse over self.hits to check their values. Are they what you expect?
 
 # Spoiler alert! The bug is on line 44, we meant to attack "A3" instead of "A4".
-# Can you fix it and run the code again to see if it works? You can remove the breakpoint by clicking on the red dot again.
+# A4 is not part of the destroyer's positions, so it doesn't get added to hits, and the status never changes to "sunk".
+# Can you fix line 44 and run the code again to see if it works? You can remove the breakpoint by clicking on the red dot again.
 # The terminal should print:
 # True
 # True
