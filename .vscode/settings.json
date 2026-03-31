@@ -6,7 +6,7 @@
   "python.defaultInterpreterPath": "python3",
   "files.trimTrailingWhitespace": false,
   "editor.formatOnSave": false,
-  "editor.hover.enabled": false,
+  "editor.hover.enabled": "off",
   "editor.trimAutoWhitespace": false,
   "[python]": {
     "editor.defaultFormatter": null,
