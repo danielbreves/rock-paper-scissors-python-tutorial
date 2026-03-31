@@ -8,9 +8,9 @@ Copy your completed code from level 9 into this file, then try some of these ide
 
 - Keep score: add a "wins" variable and count how many times the player wins.
 - Play again: when the player runs out of lives, ask if they want to play again.
-- Best of 3: instead of lives, make the game end after 3 rounds and show who won the most.
-- Play a fixed number of rounds using a "for" loop instead of a "while" loop.
-  Learn more about for loops here: https://docs.python.org/3/tutorial/controlflow.html#for-statements
+- Play a fixed number of rounds using a "for" loop with range(number_of_rounds) instead of a "while" loop.
+  For example, range(5) produces the sequence 0, 1, 2, 3, 4.
+  Learn more about for loops and range here: https://docs.python.org/3/tutorial/controlflow.html#the-range-function
 - Use a dictionary to simplify the winner check instead of all those if/elif lines.
   Hint: winner_loser_dict = {"rock": "scissors", "paper": "rock", "scissors": "paper"} maps what beats what.
   Then you can do this:

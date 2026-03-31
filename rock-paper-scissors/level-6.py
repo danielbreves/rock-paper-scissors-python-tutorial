@@ -41,4 +41,9 @@ life = 3
 
 # Run the code with "python rock-paper-scissors/level-6.py" and play until you run out of lives!
 
+# Bonus 1: try replacing “while life > 0:” with “for game_round in [1, 2, 3]:” and run the code again.
+# The game should run for a fixed number of 3 rounds! A “for” loop repeats the code for each item on the list.
+
+# Bonus 2: Try writing print(“Round:”, game_round) inside the “for” loop and run the code again.
+
 # level-7.py is waiting for you!

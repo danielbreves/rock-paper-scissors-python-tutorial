@@ -28,7 +28,10 @@ For example: ["apple", "banana", "cherry"] is a list of three fruits.
 
 # Run the code with "python rock-paper-scissors/level-3.py" to see what the computer picks!
 
-# Bonus: Try adding a 4th option like "lizard" to the options list.
-# Run the code again to see the new option in action!
+# Bonus: you can access items on a list by their "index" starting from 0.
+# Try writing the code below this line and running it to see what happens:
+# print(options[0])
+# print(options[1])
+# print(options[2])
 
 # Keep going! Open level-4.py!

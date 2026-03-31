@@ -43,8 +43,7 @@ destroyer.positions = ["A1", "A2", "A3"]
 # Run the code with "python battleship/level-2.py" — you should see [] and "afloat"!
 
 # Bonus: Let's add a new property to the Battleship class!
-
-# Step 3: Add "age: int" to the class properties (below status on line 20).
+# Add "age: int" to the class properties (below status on line 20).
 # Then inside __init__, set a default: self.age = 0
 # Print destroyer.age to check it works below this line:
 
